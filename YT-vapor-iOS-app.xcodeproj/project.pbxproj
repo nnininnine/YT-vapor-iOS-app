@@ -7,18 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E40A330274243290055B844 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E40A32F274243290055B844 /* HttpClient.swift */; };
+		1E40A332274245FF0055B844 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E40A331274245FF0055B844 /* Constants.swift */; };
+		1E40A33427424EE00055B844 /* ModalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E40A33327424EE00055B844 /* ModalType.swift */; };
+		1E40A338274250730055B844 /* AddUpdateSong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E40A337274250730055B844 /* AddUpdateSong.swift */; };
+		1E40A33A274250BF0055B844 /* AddUpdateSongViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E40A339274250BF0055B844 /* AddUpdateSongViewModel.swift */; };
 		1E977BD627415581001B90BB /* YT_vapor_iOS_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E977BD527415581001B90BB /* YT_vapor_iOS_appApp.swift */; };
-		1E977BD827415581001B90BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E977BD727415581001B90BB /* ContentView.swift */; };
+		1E977BD827415581001B90BB /* SongList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E977BD727415581001B90BB /* SongList.swift */; };
 		1E977BDA27415582001B90BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E977BD927415582001B90BB /* Assets.xcassets */; };
 		1E977BDD27415582001B90BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E977BDC27415582001B90BB /* Preview Assets.xcassets */; };
+		1E977BE82741565C001B90BB /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E977BE72741565C001B90BB /* Song.swift */; };
+		1E977BEA274156CA001B90BB /* SongListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E977BE9274156CA001B90BB /* SongListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E40A32F274243290055B844 /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		1E40A331274245FF0055B844 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1E40A33327424EE00055B844 /* ModalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalType.swift; sourceTree = "<group>"; };
+		1E40A337274250730055B844 /* AddUpdateSong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUpdateSong.swift; sourceTree = "<group>"; };
+		1E40A339274250BF0055B844 /* AddUpdateSongViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUpdateSongViewModel.swift; sourceTree = "<group>"; };
 		1E977BD227415581001B90BB /* YT-vapor-iOS-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YT-vapor-iOS-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E977BD527415581001B90BB /* YT_vapor_iOS_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YT_vapor_iOS_appApp.swift; sourceTree = "<group>"; };
-		1E977BD727415581001B90BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1E977BD727415581001B90BB /* SongList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongList.swift; sourceTree = "<group>"; };
 		1E977BD927415582001B90BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E977BDC27415582001B90BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1E977BE72741565C001B90BB /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		1E977BE9274156CA001B90BB /* SongListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +65,11 @@
 		1E977BD427415581001B90BB /* YT-vapor-iOS-app */ = {
 			isa = PBXGroup;
 			children = (
+				1E977BE3274155BF001B90BB /* Models */,
+				1E977BE5274155E4001B90BB /* Views */,
+				1E977BE4274155C4001B90BB /* View Models */,
+				1E977BE6274155FA001B90BB /* Utilities */,
 				1E977BD527415581001B90BB /* YT_vapor_iOS_appApp.swift */,
-				1E977BD727415581001B90BB /* ContentView.swift */,
 				1E977BD927415582001B90BB /* Assets.xcassets */,
 				1E977BDB27415582001B90BB /* Preview Content */,
 			);
@@ -65,6 +82,42 @@
 				1E977BDC27415582001B90BB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1E977BE3274155BF001B90BB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1E977BE72741565C001B90BB /* Song.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1E977BE4274155C4001B90BB /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				1E977BE9274156CA001B90BB /* SongListViewModel.swift */,
+				1E40A339274250BF0055B844 /* AddUpdateSongViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		1E977BE5274155E4001B90BB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1E977BD727415581001B90BB /* SongList.swift */,
+				1E40A337274250730055B844 /* AddUpdateSong.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1E977BE6274155FA001B90BB /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				1E40A331274245FF0055B844 /* Constants.swift */,
+				1E40A32F274243290055B844 /* HttpClient.swift */,
+				1E40A33327424EE00055B844 /* ModalType.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +190,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E977BD827415581001B90BB /* ContentView.swift in Sources */,
+				1E40A330274243290055B844 /* HttpClient.swift in Sources */,
+				1E40A33A274250BF0055B844 /* AddUpdateSongViewModel.swift in Sources */,
+				1E40A338274250730055B844 /* AddUpdateSong.swift in Sources */,
+				1E977BE82741565C001B90BB /* Song.swift in Sources */,
+				1E977BEA274156CA001B90BB /* SongListViewModel.swift in Sources */,
+				1E977BD827415581001B90BB /* SongList.swift in Sources */,
+				1E40A33427424EE00055B844 /* ModalType.swift in Sources */,
 				1E977BD627415581001B90BB /* YT_vapor_iOS_appApp.swift in Sources */,
+				1E40A332274245FF0055B844 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +337,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +367,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

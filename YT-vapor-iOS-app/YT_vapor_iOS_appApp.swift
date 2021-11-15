@@ -11,7 +11,7 @@ import SwiftUI
 struct YT_vapor_iOS_appApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SongList()
         }
     }
 }
