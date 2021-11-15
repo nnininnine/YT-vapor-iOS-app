@@ -25,7 +25,7 @@ struct SongList: View {
                             .font(.title3)
                             .foregroundColor(Color(.label))
                     }
-                }
+                }.onDelete(perform: viewModel.deleteSong)
             }
             .navigationTitle(Text("🎵 Songs"))
             .toolbar{
